@@ -1,0 +1,443 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ACYE-Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="static/vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static/vendors/themify-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="static/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="static/vendors/selectFX/css/cs-skin-elastic.css">
+    <link rel="icon" href="/static/icon1.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<style>
+
+body {
+  background: #1f2328;
+  display: table;
+  font-family: 'Open Sans' sans-serif !important;
+  font-size: 16px;
+  width: 100%; }
+
+div[class*="col-"] {
+  float: left; }
+
+
+a,
+button {
+  text-decoration: none;
+  outline: none !important;
+  color: #878787;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #000; }
+
+ol,
+ul {
+  padding-left: 0; }
+
+.btn:focus,
+button:focus {
+  box-shadow: none !important;
+  outline: 0; }
+
+img {
+  max-width: 100%; }
+
+    #custom-button {
+  padding: 10px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+   left: 70px;
+   position: relative;
+   top: 15px;
+}
+
+#custom-button:hover {
+  background-color: #00b28f;
+}
+
+#custom-text {
+  margin-left: 88px;
+  font-family: sans-serif;
+  color: #aaa;
+  top: 15px;
+  position: relative;
+}
+.h3,
+h3 {
+ font-size:2.75rem;
+ text-align: center;
+ color:#fff;
+}
+.btn {
+ width: 340px;
+ left: 12%;
+ position: relative;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+ color:white;
+}
+.text-white {
+ border: 1px !important;
+ text-align: center;
+}
+.bg-flat-color-4 {
+  background: transparent; }
+
+.right-panel {
+  display: table-cell;
+  padding-left: 0 !important;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease; }
+
+  .right-panel .breadcrumbs {
+    background: url(static/s2.jpg) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-top: 0;
+    padding: 0 5px;
+    padding-bottom: 45px;
+    padding-top: 25px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.15);
+
+   }
+      .right-panel .breadcrumbs::before {
+       content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 1075px;
+    background-color: rgba(0,0,0,0.25);}
+
+    .right-panel .breadcrumbs .col-lg-8 .page-header {
+      float: left; }
+
+  .right-panel .page-header {
+    min-height: 50px;
+    margin: 0;
+    padding: 0 15px;
+    border-bottom: 0;
+    background: #00000059;
+    position: relative;}
+
+    .right-panel .page-header h1 {
+      font-size: 22px;
+      padding: 15px 0; }
+
+    .right-panel .page-header .breadcrumb {
+      margin: 0;
+      padding: 13.5px 0;
+      background: #fff;
+      text-transform: capitalize; }
+
+    .right-panel .page-header .breadcrumb > li + li:before {
+      padding: 0 5px;
+      color: #ccc;
+      content: "/\00a0"; }
+
+
+.right-panel header.header {
+  background: #272c33;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+  clear: both;
+  display: inline-block;
+  padding: 15px 20px 13px;
+  width: 100%; }
+
+
+
+.search-trigger {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  height: 41px;
+  width: 43px;
+  line-height: 38px;
+  top: -80px;
+  position: relative;}
+
+  .user-area .user-avatar {
+    float: right;
+    margin-top: 4px;
+    width: 32px; }
+
+.content {
+  float: left;
+  padding: 0 20px;
+  width: 100%; }
+
+.card {
+  margin-bottom:24px;
+  margin-bottom: 1.5rem;
+  border-radius: 0;
+background-color: #1f2328;
+border: 1px solid #353232;}
+
+  .card h4 {
+
+    font-size: 2rem;
+    text-align: center; }
+
+   div.col-lg-4:nth-child(1) > a:nth-child(1) {
+ position: relative;
+ z-index: 3000;
+ top: -73px;
+ color: #929597;
+ font-size:25px;
+}
+.alert-warning {
+ color:#8a6d3b;
+ background-color:#fcf8e3;
+ border-color:#faebcc;
+ top: 62px;
+ height:max-content;
+ position: relative;
+}
+.flashtxt{
+position:relative;
+top:-76px;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+ position:relative;
+ top:-81px;
+}
+.count{
+position:relative;
+top:-10px;
+}
+.text-light{
+position:relative;
+top:3px;
+}
+.flot-container{
+position:relative;
+left:4%;
+}
+.flashtxt2{
+position:relative;
+top:2px;
+}
+div.flash_message:nth-child(1) {
+ position: relative;
+ left: 110%;
+ z-index: 3000;
+}
+.sclose {
+ position: relative;
+ top: 68px;
+}
+.flashtxt2 > b:nth-child(1) {
+ position:relative;
+ left: 50%;
+}
+
+</style>
+
+<body>
+
+
+    <div id="right-panel" class="right-panel">
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+
+                    <div class="header-left">
+
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+
+                            <img class="user-avatar rounded-circle" src="static/admin.jpg" alt="User Avatar">
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+
+        <div class="breadcrumbs">
+             <div class="col-lg-4 col-md-6">
+  <a href="/logout"> <i class="fa fa-power-off"></i></a>
+    </div>
+             <div class="col-lg-4 col-md-6">
+          <div class="page-header float-left">
+                    <div class="page-title">
+                        <h3><b>Welcome to Aerial Crop Yield Estimator</b></h3>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+            <div class="col-lg-4 col-md-6">
+                   <div class=flash_message>
+                        <div class="alert alert-warning alert-dismissible">
+                          <div class="sclose"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></div>
+                                  <p class="flashtxt2">
+                                      <b>NOTE</b><br>
+                                    1. Only 2 analysis possible<br>
+                                    2. Image size to be uploded <120kB<br>
+                                    3. Image types supported:jpg.png,jpeg<br>
+                                    4. To clear cache press ctrl+f5<br>
+                                    5. It is best practice to clear cache before analysis<br>
+                                    6. Always logout if you are done with analysis.<br>
+                                    7. Lower the image size, better the analysis speed.<br>
+                                    8. Higher image size will result in application error<br>
+                                    9. If you get application error, from heroku<br>
+                                        Go back->logout->clear cache->login again->upload small size image<br>
+                                    10. contact developers if error still exists.<br>
+                                  </p>
+                        </div>
+                    </div>
+    </div>
+        <div class="col-lg-4 col-md-6">
+             <form method=post enctype=multipart/form-data>
+             <input type="file" id="real-file" name=file hidden="hidden" />
+                    <button type="button" id="custom-button">Choose a file to estimate</button>
+                    <span id="custom-text">No file chosen</span>
+                 <div class="col-sm-12">
+                    <br><br>
+                </div>
+                   <div class="col-sm-12">
+
+               <button  type=submit value=Upload class="btn btn-primary btn-lg btn-block">Click to Upload</button>
+            </div>
+
+                 <div class=flash_message>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-warning alert-dismissible">
+                          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                  <p class="flashtxt">{{ message }} </p>
+                                </div>
+                    {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </div>
+             </form>
+    </div>
+
+             <div class="col-sm-12">
+                    <br><br>
+            </div>
+              <div class="col-lg-4 col-md-6">
+
+    </div>
+             <div class="col-lg-4 col-md-6">
+         <div class="card text-white bg-flat-color-4">
+
+                    <p class="text-light">Estimated Count:</p>
+                     <h4 class="mb-0">
+                                    <span class="count"> {{ans}}</span>
+                                </h4>
+
+                </div>
+    </div>
+        <div class="content mt-3">
+            <div class="animated fadeIn">
+
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-3">High Contrast</h4>
+                                <div class="flot-container">
+                                   <img src="{{image1}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="mb-3">Heat Map</h4>
+                                <div class="flot-container">
+                                   <img src="{{image2}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="static/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="static/vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="static/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/main.js"></script>
+
+    <script src="static/vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="static/assets/js/widgets.js"></script>
+    <script type="text/javascript">
+    const realFileBtn = document.getElementById("real-file");
+    const customBtn = document.getElementById("custom-button");
+    const customTxt = document.getElementById("custom-text");
+
+    customBtn.addEventListener("click", function() {
+    realFileBtn.click();
+    });
+
+    realFileBtn.addEventListener("change", function() {
+    if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+    } else {
+    customTxt.innerHTML = "No file chosen";
+    }
+    });
+
+</script>
+</body>
+
+</html>
